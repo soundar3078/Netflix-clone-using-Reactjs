@@ -1,0 +1,133 @@
+.hero{
+    position:relative;
+    display: flex;
+}
+
+.bannerimg{
+    width:100%;
+    mask-image: linear-gradient(to right, transparent,rgb(13, 13, 13) 75%);
+    -weblit-mask-image: linear-gradient(to right, transparent,rgb(11, 11, 11) 75%);
+}
+
+.hero-caption{
+    position:absolute;
+    width:100%;
+    padding:5%;
+    bottom:0;
+}
+
+.captionimg{
+    width:90%;
+    max-width: 420px;
+    margin-bottom:30px;
+}
+
+.hero-caption{
+    max-width:700px;
+    font-size:17px;
+    margin-bottom: 20px;
+}
+
+.hero-caption p{
+    max-width:700px;
+    font-size:17px;
+    margin-bottom:20px;
+}
+
+.hero-btns{
+    display:flex;
+    gap:10px;
+    margin-bottom:50px;
+}
+
+.hero-btns .btn img{
+    width:25px;
+}
+
+
+.hero-btns .btn{
+    border:0;
+    outline:0;
+    padding:8px 20px;
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    width:500px;
+    height: 100px;
+    font-size:15px;
+    font-weight:600;
+    background:white;
+    border-radius:4px;
+    cursor:pointer;
+}
+
+
+.hero-btns .dark-btn{
+    color:#fff;
+    background-color:#6d6d6eb3;
+}
+.hero-btns .dark-btn img{
+    width:20px;
+    height:20px;  
+}
+
+.hero-btns .btn:hover{
+    background:#ffffffbf;
+}
+
+.hero-btns .dark-btn:hover{
+    background: #6d6d6e66;
+}
+
+.morecards{
+    padding-left:6%;
+}
+
+@media (max-width:1024px){
+    .hero-caption .titlecards{
+        display:none;
+    }
+    .captionimg{
+        display:none;
+    }
+    .hero-btns{
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width:800px){
+    .hero-caption{
+        padding-left: 4%;
+    }
+    .captionimg{
+        margin-bottom: 10px;
+        width:40%;
+    }
+    .hero-caption p{
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    .hero-btns .btn img{
+        width:20px;
+    }
+    .morecards{
+        padding-left: 4%;
+    }
+}
+
+@media (max-width:500px){
+    .captionimg{
+        display:none;
+    }
+    .hero-btns .btn img{
+        width:15px;
+    }
+    .hero-btns .btn{
+        padding:4px 10px;
+        gap:5px;
+        font-size:10px;
+    }
+    .btn{
+        display:none;
+    }
+}
